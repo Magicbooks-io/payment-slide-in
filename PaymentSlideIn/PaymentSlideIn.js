@@ -101,7 +101,7 @@ class PaymentSlideIn extends HTMLElement {
   renderPaymentForm(clientSecret) {
     if (!clientSecret) return;
     
-    const stripe = Stripe("pk_live_51LGNXDAtS3kafppOP02r7sSYgKF5DV4ZDopP7J2kac0CNSTCBXGgOuVRvQsaVTUdxI3GrX1GLllOfAujFlLVWohn00NaFwDikp");
+    const stripe = Stripe("your-publishable-key");
     const checkoutDiv = this.shadowRoot.querySelector('#checkout');
 
     stripe.initEmbeddedCheckout({
